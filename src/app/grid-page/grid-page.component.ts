@@ -7,8 +7,6 @@ import {
   viewChild,
 } from '@angular/core';
 
-import 'ids-enterprise-wc/components/ids-data-grid/ids-data-grid';
-
 /**
  * Generates sample data rows for the grid.
  */

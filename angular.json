@@ -15,6 +15,9 @@
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
+            "scripts": [
+              "node_modules/ids-enterprise-wc/enterprise-wc.all.iife.js"
+            ],
             "styles": [
               "node_modules/ids-enterprise-wc/themes/ids-theme-default-light.css",
               "src/styles.css"
