@@ -26,7 +26,7 @@
 
 ## Root Cause
 
-The `ids-pager` sub-component inside `ids-data-grid` establishes event listener bindings to the grid **only during initial render**. When `disconnectedCallback` fires (element removed) and then `connectedCallback` fires (element re-inserted), the pager's internal event delegation to the grid is **not re-established**.
+The `ids-pager` sub-component inside `ids-data-grid` establishes event listener bindings to the grid **only during initial render**. When `disconnectedCallback` fires (element removed) and then `connectedCallback` fires (element re-inserted), the pager's internal event delegation to the grid's rendering pipeline is **not re-established**.
 
 ### Evidence
 
@@ -61,4 +61,5 @@ npm start
 
 ## StackBlitz
 
-To run on StackBlitz, upload this project or use the StackBlitz import-from-GitHub feature.
+To run on StackBlitz, upload this folder or use StackBlitz's GitHub import feature.
+The `.stackblitzrc` is pre-configured to auto-install and start the dev server.

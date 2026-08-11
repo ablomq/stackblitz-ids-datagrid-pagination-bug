@@ -4,5 +4,8 @@ import { routes } from './app.routes';
 import { CustomRouteReuseStrategy } from './custom-route-reuse-strategy';
 
 export const appConfig: ApplicationConfig = {
-    providers: [provideRouter(routes), { provide: RouteReuseStrategy, useClass: CustomRouteReuseStrategy }],
+  providers: [
+    provideRouter(routes),
+    { provide: RouteReuseStrategy, useClass: CustomRouteReuseStrategy },
+  ],
 };
